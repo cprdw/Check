@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Category: Codable, Identifiable {
+    let id = UUID()
+    let createdDate: Date
+    let name: String
+    let description: String
+    let color: String
+
+}

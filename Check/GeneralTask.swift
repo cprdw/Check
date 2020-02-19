@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct GeneralTask: Codable, Identifiable {
+    let id = UUID()
+    let createdDate: Date
+    let level: Int
+    let dueDate: Date
+    let name: String
+    let category: Category 
+    let description: String
+
+}
+

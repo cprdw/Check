@@ -9,13 +9,20 @@
 import SwiftUI
 
 struct AllAddView: View {
+    @ObservedObject var categories: Categories
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            //AddView(tasks: , categories: self.categories)
+             //   .tabItem {
+                    Text("Task")
+            //}
+        }
     }
 }
 
 struct AllAddView_Previews: PreviewProvider {
     static var previews: some View {
-        AllAddView()
+        AllAddView(categories: Categories())
     }
 }
